@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Multiplica</title>
+</head>
+<body>
+        <script type= "text/javascript">
+            var nr;
+            nr=prompt('Ingrese un numero(1-10)','');
+            nr=parseInt(nr);
+    
+            document.write("<table>");
+    
+            var x=0;
+            if(nr % 2 !=0){
+    
+    
+            for (x=1; x <=10; x++)
+            {
+                tabla=nr*x;
+                document.write("<tr><td>");
+                document.write(nr+"x"+x+"="+ tabla + "<br>")
+                document.write("</tr></td>");
+            }
+            document.write("</table>");
+            }
+            else{
+                document.write("No e PAR");
+            }
+        </script>
+</body>
+</html>
